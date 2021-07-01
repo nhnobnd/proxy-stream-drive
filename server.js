@@ -1,6 +1,6 @@
 'use strict'
 
-const PORT =    process.env.PORT|| 3000;
+//const PORT =    process.env.PORT|| 3000;
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -21,4 +21,4 @@ app.options('*', (req, res, next) => res.end());
 
 app.use(require('./routes'));
 
-app.listen(PORT, () => console.log('Run app port: %s', PORT));
+app.listen(80, () => console.log('Run app port: %s', PORT));
