@@ -21,4 +21,4 @@ app.options('*', (req, res, next) => res.end());
 
 app.use(require('./routes'));
 
-app.listen(8000, () => console.log('Run app port: %s', PORT));
+app.listen(80);
